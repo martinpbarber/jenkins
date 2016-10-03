@@ -1,7 +1,7 @@
 stage('Checkout') {
     node {
         git 'https://github.com/martinpbarber/jenkins'   
-        echo pwd
+        echo pwd tmp: true
     }
 }
 
