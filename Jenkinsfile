@@ -1,7 +1,8 @@
 stage('Checkout') {
     node {
         git 'https://github.com/martinpbarber/jenkins'   
-        echo pwd tmp: true
+        def tempDir = pwd tmp: true
+        echo tempDir
     }
 }
 
